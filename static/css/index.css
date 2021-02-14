@@ -1,0 +1,108 @@
+:root {
+    --dark-background: #0d1821;
+    --dark-primary-text: #f0f4ef;
+    --dark-secondary-text: #d1cccc;
+
+    --light-background: #ffffff;
+    --light-primary-text: #000000;
+    --light-secondary-text: #202020;
+
+    --font-size-title: 48px;
+    --font-size-subtitle: 28px;
+    --font-size-section-header: 38px;
+    --font-size-section-content: 24px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    min-height: 100%;
+}
+
+.container-dark {
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: var(--dark-background);
+}
+
+.container-light {
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: var(--light-background);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.center-left-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    text-align: start;
+    margin: 0 calc(100vw / 3.5) 0 calc(100vw / 5);
+    min-height: 100vh;
+}
+
+.home-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: var(--font-size-title);
+    color: var(--dark-primary-text);
+}
+
+.home-subtitle {
+    font-weight: normal;
+    text-align: center;
+    font-size: var(--font-size-subtitle);
+    color: var(--dark-primary-text);
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: var(--font-size-section-header);
+    color: var(--light-primary-text);
+}
+
+.contents {
+    font-weight: normal;
+    margin-bottom: 16px;
+    font-size: var(--font-size-section-content);
+    color: var(--light-secondary-text);
+}
+
+.about-icon {
+    margin-top: 16px;
+    padding-right: 16px;
+    width: 24px;
+    height: 24px;
+}
