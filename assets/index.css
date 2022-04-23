@@ -7,6 +7,8 @@
 
 /* --- common --- */
 html, body {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 16px;
     margin-right: 16px;
     font-family: 'Source Sans Pro', sans-serif;
